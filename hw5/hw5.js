@@ -2,6 +2,8 @@ const express = require('express');
 const mysql = require('mysql2')
 const jwt = require('jsonwebtoken')
 
+const jwtsecret = "aphin"
+
 const sqlpool = mysql.createPool({
     namedPlaceholders: true,
     charset: 'utf8',
